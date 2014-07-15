@@ -1,0 +1,18 @@
+---
+---
+Testing
+content_for
+→ {% content_for test %}
+Testing
+{% endcontent_for %}{% content_for test %}
+content_for
+{% endcontent_for %}{% yield test %}
+
+{% content_for test2 %}goooooooal!{% endcontent_for %}
+GOOOOOOOAL! → {% yield test2 | upcase %}
+
+{% content_for test3 if site.sidebar == true %}Nothing!{% endcontent_for %}
+'' → '{% yield test3 %}'
+
+{% content_for test4 %}Nothing!{% endcontent_for %}
+'' → '{% yield test3 if site.sidebar == true %}'
