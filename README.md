@@ -1,6 +1,6 @@
 # Octopress Content For
 
-Use the familiar `content_for` and `yield` tags from Jekyll, but with conditional rendering and in-line filtering.
+Add content_for and yield tags to Jekyll with conditional rendering and in-line filters.
 
 [![Build Status](https://travis-ci.org/octopress/content-for.svg)](https://travis-ci.org/octopress/content-for)
 [![Gem Version](http://img.shields.io/gem/v/octopress-content-for.svg)](https://rubygems.org/gems/octopress-content-for)
