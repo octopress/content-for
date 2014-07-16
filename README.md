@@ -20,6 +20,11 @@ Or install it yourself as:
 
     $ gem install octopress-content-for
 
+Next add it to your gems list in Jekyll's `_config.yml`
+
+    gems:
+      - octopress-content-for
+
 ## Usage
 
 Use it like a typical `content_for` tag.
