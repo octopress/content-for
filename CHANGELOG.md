@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.0.4 - 2015-01-11
+
+- Removed additional outdated docs.
+
 ### 1.0.3 - 2015-01-11
 
 - Docs description fix
