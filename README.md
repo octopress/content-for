@@ -8,44 +8,52 @@ Add content_for and yield tags to Jekyll with conditional rendering and in-line 
 
 ## Installation
 
-Add this line to your application's Gemfile:
+If you're using bundler add this gem to your site's Gemfile in the `:jekyll_plugins` group:
 
-    gem 'octopress-content-for'
+    group :jekyll_plugins do
+      gem 'octopress-content-for'
+    end
 
-And then execute:
+Then install the gem with Bundler
 
     $ bundle
 
-Or install it yourself as:
+To install manually without bundler:
 
     $ gem install octopress-content-for
 
-Next add it to your gems list in Jekyll's `_config.yml`
+Then add the gem to your Jekyll configuration.
 
     gems:
-      - octopress-content-for
+      -octopress-content-for
 
 ## Usage
 
 Use it like a typical `content_for` tag.
 
-    {% content_for awesome_content %}
-    some content
-    {% endcontent_for %}
+```
+{% content_for awesome_content %}
+some content
+{% endcontent_for %}
 
-    {% yield awesome_content %}  //=> some content
+{% yield awesome_content %}  //=> some content
+```
 
 Use in-line filters.
 
-    {% yield awesome_content | upcase %}  //=> SOME CONTENT
+```
+{% yield awesome_content | upcase %}  //=> SOME CONTENT
+```
 
 Use conditional rendering in both `content_for` and `yield` tags.
 
-    {% content_for footer unless page.footer == false %}
-    Footer!
-    {% endcontent_for %}
+```
+{% content_for footer unless page.footer == false %}
+Footer!
+{% endcontent_for %}
 
-    {% yield footer if page.footer %}
+{% yield footer if page.footer %}
+```
 
 ## Contributing
 

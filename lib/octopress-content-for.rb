@@ -1,5 +1,4 @@
 require "octopress-content-for/version"
-require "octopress-content-for/ink-plugin"
 require "octopress-tag-helpers"
 
 module Octopress
@@ -57,3 +56,14 @@ end
 
 Liquid::Template.register_tag('content_for', Octopress::Tags::ContentFor::Tag)
 Liquid::Template.register_tag('yield', Octopress::Tags::Yield::Tag)
+
+if defined? Octopress::Docs
+  Octopress::Docs.add({
+    name:        "Octopress Content For",
+    gem:         "octopress-content-for",
+    version:     Octopress::Tags::ContentFor::VERSION,
+    description: "A framework for writing Jekyll sites ",
+    path:        File.expand_path(File.join(File.dirname(__FILE__), "../")),
+    source_url:  "https://github.com/octopress/content-for"
+  })
+end
