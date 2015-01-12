@@ -1,6 +1,6 @@
 # Changelog
 
-### 1.0.2 - 2015-01-11
+### 1.0.3 - 2015-01-11
 
 - Docs description fix
 
