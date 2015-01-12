@@ -62,7 +62,7 @@ if defined? Octopress::Docs
     name:        "Octopress Content For",
     gem:         "octopress-content-for",
     version:     Octopress::Tags::ContentFor::VERSION,
-    description: "A framework for writing Jekyll sites ",
+    description: "Content_for and yeild tags with filters and conditional output",
     path:        File.expand_path(File.join(File.dirname(__FILE__), "../")),
     source_url:  "https://github.com/octopress/content-for"
   })

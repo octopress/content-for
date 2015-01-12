@@ -1,6 +1,10 @@
 # Changelog
 
-### 1.0.1 - 2015-01-11
+### 1.0.2 - 2015-01-11
+
+- Docs description fix
+
+### 1.0.2 - 2015-01-11
 
 - Added support for Octopress docs
 - Updated readme
